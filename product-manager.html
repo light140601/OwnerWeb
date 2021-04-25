@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Manager</title>
+    <link rel="stylesheet" href="./assets/css/product-manager.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="stmng">
+        <h1>Staff Management</h1>
+        <hr>
+        <div class="content">
+            <form class="pmg-form">
+                <label class="lb" for="staff-code">Staff code: </label><br>
+                <input id="staff-code" type="text" name="staff-code" placeholder="Staff code"><br><br>
+                <label class="lb" for="fname">Full name: </label><br>
+                <input id="fname" type="text" name="fname" placeholder="Full name"><br><br>
+                <label class="lb" for="phone-number">Phone number: </label><br>
+                <input id="phone-number" type="text" name="phone-number" placeholder="Phone number"><br><br>
+                <label class="lb" for="birth-day">Date start work: </label><br>
+                <input id="date-start-work" type="date" name="date-start-work" placeholder="dd-mm-yyyy" min="1900-01-01" max="2021-12-31"><br><br>
+                <input class="bt add" id="add" type="button" value="ADD">
+            </form>
+        </div>
+        <hr>
+        <h1>Information</h1>
+        <div class="content">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Staff code</th>
+                        <th>Full name</th>
+                        <th>Phone number</th>
+                        <th>Date start work</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NV 01</td>
+                        <td>Nguyễn Như Nhựt</td>
+                        <td>0927345678</td>
+                        <td>13/4/2006</td>
+                        <td>
+                            <a class="actions edit"><i class="fas fa-edit" aria-hidden="true"></i></a>
+                            <a class="actions remove"><i class="fas fa-minus-circle" aria-hidden="true"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+        <script src="./assets/js/product-manager.js"></script>
+</body>
+
+</html>
